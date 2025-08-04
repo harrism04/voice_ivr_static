@@ -25,7 +25,7 @@ tunnels:
     addr: backend:5678
     proto: http
     basic_auth:
-      - "admin:0f5332e8ace371bc0aa5fa4ec058050fa048c03ec5f95ffdfbbf2fd95046720"
+      - "admin:$WEBHOOK_AUTH_TOKEN"
 EOF
 
 echo "Generated ngrok.yml with actual values"
