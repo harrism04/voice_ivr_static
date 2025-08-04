@@ -91,10 +91,6 @@ Each use case can be implemented by customizing the voice prompts and workflow i
   3. Configure your static ngrok domain:
      - Go to https://dashboard.ngrok.com/domains to find your static ngrok domain or create one if you haven't already.
      - Update `WEBHOOK_BASE_URL` in your `.env` file with your static ngrok domain.
-     - Edit the `docker-compose.yml` file and update the `--domain` parameter in the `NGROK_OPTS` environment variable with your static domain:
-       ```yaml
-       - 'NGROK_OPTS=--log=stdout --domain=your-domain.ngrok-free.app'
-       ```
      
      Note: The ngrok configuration is automatically generated inside the container, so you don't need to manually create or edit an ngrok.yml file.
 
